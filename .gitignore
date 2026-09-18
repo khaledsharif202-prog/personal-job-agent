@@ -1,0 +1,19 @@
+# Local/private user data
+cv/
+cv-profile.local.json
+config.local.json
+.env
+.env.*
+
+# Runtime data (keep clean templates in the repository)
+data/*.local.json
+data/backups/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs
+*.log

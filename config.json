@@ -1,0 +1,630 @@
+{
+  "searches": [
+    {
+      "name": "Frontend - Ingolstadt",
+      "query": "Frontend",
+      "location": "Ingolstadt",
+      "radiusKm": 50,
+      "publishedWithinDays": 100,
+      "category": "tech"
+    },
+    {
+      "name": "React - Ingolstadt",
+      "query": "React",
+      "location": "Ingolstadt",
+      "radiusKm": 50,
+      "publishedWithinDays": 100,
+      "category": "tech"
+    },
+    {
+      "name": "Web Developer - Ingolstadt",
+      "query": "Web Developer",
+      "location": "Ingolstadt",
+      "radiusKm": 50,
+      "publishedWithinDays": 100,
+      "category": "tech"
+    },
+    {
+      "name": "Webentwickler - Ingolstadt",
+      "query": "Webentwickler",
+      "location": "Ingolstadt",
+      "radiusKm": 50,
+      "publishedWithinDays": 100,
+      "category": "tech"
+    },
+    {
+      "name": "JavaScript - Ingolstadt",
+      "query": "JavaScript",
+      "location": "Ingolstadt",
+      "radiusKm": 50,
+      "publishedWithinDays": 100,
+      "category": "tech"
+    },
+    {
+      "name": "TypeScript - Ingolstadt",
+      "query": "TypeScript",
+      "location": "Ingolstadt",
+      "radiusKm": 50,
+      "publishedWithinDays": 100,
+      "category": "tech"
+    },
+    {
+      "name": "React Native - Ingolstadt",
+      "query": "React Native",
+      "location": "Ingolstadt",
+      "radiusKm": 50,
+      "publishedWithinDays": 100,
+      "category": "tech"
+    },
+    {
+      "name": "Mobile Developer - Ingolstadt",
+      "query": "Mobile Developer",
+      "location": "Ingolstadt",
+      "radiusKm": 50,
+      "publishedWithinDays": 100,
+      "category": "tech"
+    },
+    {
+      "name": "Fahrradkurier - Ingolstadt",
+      "query": "Fahrradkurier",
+      "location": "Ingolstadt",
+      "radiusKm": 50,
+      "publishedWithinDays": 100,
+      "category": "delivery"
+    },
+    {
+      "name": "Kurierfahrer Fahrrad - Ingolstadt",
+      "query": "Kurierfahrer Fahrrad",
+      "location": "Ingolstadt",
+      "radiusKm": 50,
+      "publishedWithinDays": 100,
+      "category": "delivery"
+    },
+    {
+      "name": "Lieferfahrer Fahrrad - Ingolstadt",
+      "query": "Lieferfahrer Fahrrad",
+      "location": "Ingolstadt",
+      "radiusKm": 50,
+      "publishedWithinDays": 100,
+      "category": "delivery"
+    },
+    {
+      "name": "Auslieferungsfahrer Fahrrad - Ingolstadt",
+      "query": "Auslieferungsfahrer Fahrrad",
+      "location": "Ingolstadt",
+      "radiusKm": 50,
+      "publishedWithinDays": 100,
+      "category": "delivery"
+    },
+    {
+      "name": "Essenslieferung Fahrrad - Ingolstadt",
+      "query": "Essenslieferung Fahrrad",
+      "location": "Ingolstadt",
+      "radiusKm": 50,
+      "publishedWithinDays": 100,
+      "category": "delivery"
+    },
+    {
+      "name": "Food Delivery Rider - Ingolstadt",
+      "query": "Food Delivery Rider",
+      "location": "Ingolstadt",
+      "radiusKm": 50,
+      "publishedWithinDays": 100,
+      "category": "delivery"
+    },
+    {
+      "name": "Bike Courier - Ingolstadt",
+      "query": "Bike Courier",
+      "location": "Ingolstadt",
+      "radiusKm": 50,
+      "publishedWithinDays": 100,
+      "category": "delivery"
+    },
+    {
+      "name": "Rider - Ingolstadt",
+      "query": "Rider",
+      "location": "Ingolstadt",
+      "radiusKm": 50,
+      "publishedWithinDays": 100,
+      "category": "delivery"
+    },
+    {
+      "name": "Kurierfahrer - Ingolstadt",
+      "query": "Kurierfahrer",
+      "location": "Ingolstadt",
+      "radiusKm": 50,
+      "publishedWithinDays": 100,
+      "category": "delivery"
+    },
+    {
+      "name": "Lieferfahrer - Ingolstadt",
+      "query": "Lieferfahrer",
+      "location": "Ingolstadt",
+      "radiusKm": 50,
+      "publishedWithinDays": 100,
+      "category": "delivery"
+    },
+    {
+      "name": "Frontend - München",
+      "query": "Frontend",
+      "location": "München",
+      "radiusKm": 100,
+      "publishedWithinDays": 100,
+      "category": "tech"
+    },
+    {
+      "name": "React - München",
+      "query": "React",
+      "location": "München",
+      "radiusKm": 100,
+      "publishedWithinDays": 100,
+      "category": "tech"
+    },
+    {
+      "name": "Web Developer - München",
+      "query": "Web Developer",
+      "location": "München",
+      "radiusKm": 100,
+      "publishedWithinDays": 100,
+      "category": "tech"
+    },
+    {
+      "name": "Webentwickler - München",
+      "query": "Webentwickler",
+      "location": "München",
+      "radiusKm": 100,
+      "publishedWithinDays": 100,
+      "category": "tech"
+    },
+    {
+      "name": "JavaScript - München",
+      "query": "JavaScript",
+      "location": "München",
+      "radiusKm": 100,
+      "publishedWithinDays": 100,
+      "category": "tech"
+    },
+    {
+      "name": "TypeScript - München",
+      "query": "TypeScript",
+      "location": "München",
+      "radiusKm": 100,
+      "publishedWithinDays": 100,
+      "category": "tech"
+    },
+    {
+      "name": "React Native - München",
+      "query": "React Native",
+      "location": "München",
+      "radiusKm": 100,
+      "publishedWithinDays": 100,
+      "category": "tech"
+    },
+    {
+      "name": "Mobile Developer - München",
+      "query": "Mobile Developer",
+      "location": "München",
+      "radiusKm": 100,
+      "publishedWithinDays": 100,
+      "category": "tech"
+    },
+    {
+      "name": "Fahrradkurier - München",
+      "query": "Fahrradkurier",
+      "location": "München",
+      "radiusKm": 100,
+      "publishedWithinDays": 100,
+      "category": "delivery"
+    },
+    {
+      "name": "Kurierfahrer Fahrrad - München",
+      "query": "Kurierfahrer Fahrrad",
+      "location": "München",
+      "radiusKm": 100,
+      "publishedWithinDays": 100,
+      "category": "delivery"
+    },
+    {
+      "name": "Lieferfahrer Fahrrad - München",
+      "query": "Lieferfahrer Fahrrad",
+      "location": "München",
+      "radiusKm": 100,
+      "publishedWithinDays": 100,
+      "category": "delivery"
+    },
+    {
+      "name": "Auslieferungsfahrer Fahrrad - München",
+      "query": "Auslieferungsfahrer Fahrrad",
+      "location": "München",
+      "radiusKm": 100,
+      "publishedWithinDays": 100,
+      "category": "delivery"
+    },
+    {
+      "name": "Essenslieferung Fahrrad - München",
+      "query": "Essenslieferung Fahrrad",
+      "location": "München",
+      "radiusKm": 100,
+      "publishedWithinDays": 100,
+      "category": "delivery"
+    },
+    {
+      "name": "Food Delivery Rider - München",
+      "query": "Food Delivery Rider",
+      "location": "München",
+      "radiusKm": 100,
+      "publishedWithinDays": 100,
+      "category": "delivery"
+    },
+    {
+      "name": "Bike Courier - München",
+      "query": "Bike Courier",
+      "location": "München",
+      "radiusKm": 100,
+      "publishedWithinDays": 100,
+      "category": "delivery"
+    },
+    {
+      "name": "Rider - München",
+      "query": "Rider",
+      "location": "München",
+      "radiusKm": 100,
+      "publishedWithinDays": 100,
+      "category": "delivery"
+    },
+    {
+      "name": "Kurierfahrer - München",
+      "query": "Kurierfahrer",
+      "location": "München",
+      "radiusKm": 100,
+      "publishedWithinDays": 100,
+      "category": "delivery"
+    },
+    {
+      "name": "Lieferfahrer - München",
+      "query": "Lieferfahrer",
+      "location": "München",
+      "radiusKm": 100,
+      "publishedWithinDays": 100,
+      "category": "delivery"
+    },
+    {
+      "name": "Frontend - Nürnberg",
+      "query": "Frontend",
+      "location": "Nürnberg",
+      "radiusKm": 100,
+      "publishedWithinDays": 100,
+      "category": "tech"
+    },
+    {
+      "name": "React - Nürnberg",
+      "query": "React",
+      "location": "Nürnberg",
+      "radiusKm": 100,
+      "publishedWithinDays": 100,
+      "category": "tech"
+    },
+    {
+      "name": "Web Developer - Nürnberg",
+      "query": "Web Developer",
+      "location": "Nürnberg",
+      "radiusKm": 100,
+      "publishedWithinDays": 100,
+      "category": "tech"
+    },
+    {
+      "name": "Webentwickler - Nürnberg",
+      "query": "Webentwickler",
+      "location": "Nürnberg",
+      "radiusKm": 100,
+      "publishedWithinDays": 100,
+      "category": "tech"
+    },
+    {
+      "name": "JavaScript - Nürnberg",
+      "query": "JavaScript",
+      "location": "Nürnberg",
+      "radiusKm": 100,
+      "publishedWithinDays": 100,
+      "category": "tech"
+    },
+    {
+      "name": "TypeScript - Nürnberg",
+      "query": "TypeScript",
+      "location": "Nürnberg",
+      "radiusKm": 100,
+      "publishedWithinDays": 100,
+      "category": "tech"
+    },
+    {
+      "name": "React Native - Nürnberg",
+      "query": "React Native",
+      "location": "Nürnberg",
+      "radiusKm": 100,
+      "publishedWithinDays": 100,
+      "category": "tech"
+    },
+    {
+      "name": "Mobile Developer - Nürnberg",
+      "query": "Mobile Developer",
+      "location": "Nürnberg",
+      "radiusKm": 100,
+      "publishedWithinDays": 100,
+      "category": "tech"
+    },
+    {
+      "name": "Fahrradkurier - Nürnberg",
+      "query": "Fahrradkurier",
+      "location": "Nürnberg",
+      "radiusKm": 100,
+      "publishedWithinDays": 100,
+      "category": "delivery"
+    },
+    {
+      "name": "Kurierfahrer Fahrrad - Nürnberg",
+      "query": "Kurierfahrer Fahrrad",
+      "location": "Nürnberg",
+      "radiusKm": 100,
+      "publishedWithinDays": 100,
+      "category": "delivery"
+    },
+    {
+      "name": "Lieferfahrer Fahrrad - Nürnberg",
+      "query": "Lieferfahrer Fahrrad",
+      "location": "Nürnberg",
+      "radiusKm": 100,
+      "publishedWithinDays": 100,
+      "category": "delivery"
+    },
+    {
+      "name": "Auslieferungsfahrer Fahrrad - Nürnberg",
+      "query": "Auslieferungsfahrer Fahrrad",
+      "location": "Nürnberg",
+      "radiusKm": 100,
+      "publishedWithinDays": 100,
+      "category": "delivery"
+    },
+    {
+      "name": "Essenslieferung Fahrrad - Nürnberg",
+      "query": "Essenslieferung Fahrrad",
+      "location": "Nürnberg",
+      "radiusKm": 100,
+      "publishedWithinDays": 100,
+      "category": "delivery"
+    },
+    {
+      "name": "Food Delivery Rider - Nürnberg",
+      "query": "Food Delivery Rider",
+      "location": "Nürnberg",
+      "radiusKm": 100,
+      "publishedWithinDays": 100,
+      "category": "delivery"
+    },
+    {
+      "name": "Bike Courier - Nürnberg",
+      "query": "Bike Courier",
+      "location": "Nürnberg",
+      "radiusKm": 100,
+      "publishedWithinDays": 100,
+      "category": "delivery"
+    },
+    {
+      "name": "Rider - Nürnberg",
+      "query": "Rider",
+      "location": "Nürnberg",
+      "radiusKm": 100,
+      "publishedWithinDays": 100,
+      "category": "delivery"
+    },
+    {
+      "name": "Kurierfahrer - Nürnberg",
+      "query": "Kurierfahrer",
+      "location": "Nürnberg",
+      "radiusKm": 100,
+      "publishedWithinDays": 100,
+      "category": "delivery"
+    },
+    {
+      "name": "Lieferfahrer - Nürnberg",
+      "query": "Lieferfahrer",
+      "location": "Nürnberg",
+      "radiusKm": 100,
+      "publishedWithinDays": 100,
+      "category": "delivery"
+    },
+    {
+      "name": "Frontend - Augsburg",
+      "query": "Frontend",
+      "location": "Augsburg",
+      "radiusKm": 100,
+      "publishedWithinDays": 100,
+      "category": "tech"
+    },
+    {
+      "name": "React - Augsburg",
+      "query": "React",
+      "location": "Augsburg",
+      "radiusKm": 100,
+      "publishedWithinDays": 100,
+      "category": "tech"
+    },
+    {
+      "name": "Web Developer - Augsburg",
+      "query": "Web Developer",
+      "location": "Augsburg",
+      "radiusKm": 100,
+      "publishedWithinDays": 100,
+      "category": "tech"
+    },
+    {
+      "name": "Webentwickler - Augsburg",
+      "query": "Webentwickler",
+      "location": "Augsburg",
+      "radiusKm": 100,
+      "publishedWithinDays": 100,
+      "category": "tech"
+    },
+    {
+      "name": "JavaScript - Augsburg",
+      "query": "JavaScript",
+      "location": "Augsburg",
+      "radiusKm": 100,
+      "publishedWithinDays": 100,
+      "category": "tech"
+    },
+    {
+      "name": "TypeScript - Augsburg",
+      "query": "TypeScript",
+      "location": "Augsburg",
+      "radiusKm": 100,
+      "publishedWithinDays": 100,
+      "category": "tech"
+    },
+    {
+      "name": "React Native - Augsburg",
+      "query": "React Native",
+      "location": "Augsburg",
+      "radiusKm": 100,
+      "publishedWithinDays": 100,
+      "category": "tech"
+    },
+    {
+      "name": "Mobile Developer - Augsburg",
+      "query": "Mobile Developer",
+      "location": "Augsburg",
+      "radiusKm": 100,
+      "publishedWithinDays": 100,
+      "category": "tech"
+    },
+    {
+      "name": "Fahrradkurier - Augsburg",
+      "query": "Fahrradkurier",
+      "location": "Augsburg",
+      "radiusKm": 100,
+      "publishedWithinDays": 100,
+      "category": "delivery"
+    },
+    {
+      "name": "Kurierfahrer Fahrrad - Augsburg",
+      "query": "Kurierfahrer Fahrrad",
+      "location": "Augsburg",
+      "radiusKm": 100,
+      "publishedWithinDays": 100,
+      "category": "delivery"
+    },
+    {
+      "name": "Lieferfahrer Fahrrad - Augsburg",
+      "query": "Lieferfahrer Fahrrad",
+      "location": "Augsburg",
+      "radiusKm": 100,
+      "publishedWithinDays": 100,
+      "category": "delivery"
+    },
+    {
+      "name": "Auslieferungsfahrer Fahrrad - Augsburg",
+      "query": "Auslieferungsfahrer Fahrrad",
+      "location": "Augsburg",
+      "radiusKm": 100,
+      "publishedWithinDays": 100,
+      "category": "delivery"
+    },
+    {
+      "name": "Essenslieferung Fahrrad - Augsburg",
+      "query": "Essenslieferung Fahrrad",
+      "location": "Augsburg",
+      "radiusKm": 100,
+      "publishedWithinDays": 100,
+      "category": "delivery"
+    },
+    {
+      "name": "Food Delivery Rider - Augsburg",
+      "query": "Food Delivery Rider",
+      "location": "Augsburg",
+      "radiusKm": 100,
+      "publishedWithinDays": 100,
+      "category": "delivery"
+    },
+    {
+      "name": "Bike Courier - Augsburg",
+      "query": "Bike Courier",
+      "location": "Augsburg",
+      "radiusKm": 100,
+      "publishedWithinDays": 100,
+      "category": "delivery"
+    },
+    {
+      "name": "Rider - Augsburg",
+      "query": "Rider",
+      "location": "Augsburg",
+      "radiusKm": 100,
+      "publishedWithinDays": 100,
+      "category": "delivery"
+    },
+    {
+      "name": "Kurierfahrer - Augsburg",
+      "query": "Kurierfahrer",
+      "location": "Augsburg",
+      "radiusKm": 100,
+      "publishedWithinDays": 100,
+      "category": "delivery"
+    },
+    {
+      "name": "Lieferfahrer - Augsburg",
+      "query": "Lieferfahrer",
+      "location": "Augsburg",
+      "radiusKm": 100,
+      "publishedWithinDays": 100,
+      "category": "delivery"
+    }
+  ],
+  "preferences": {
+    "includeKeywords": [
+      "front-end",
+      "frontend",
+      "javascript",
+      "mobile app",
+      "mobile developer",
+      "react",
+      "react native",
+      "react.js",
+      "software developer frontend",
+      "softwareentwickler frontend",
+      "typescript",
+      "ui developer",
+      "ui engineer",
+      "web",
+      "web developer",
+      "webentwickler"
+    ],
+    "excludeKeywords": [
+      "senior",
+      "lead",
+      "principal",
+      "head of"
+    ],
+    "preferredKeywords": [
+      "frontend",
+      "homeoffice",
+      "javascript",
+      "junior",
+      "react",
+      "react native",
+      "remote",
+      "teilzeit",
+      "typescript",
+      "web"
+    ],
+    "deliveryKeywords": [
+      "fahrradkurier",
+      "kurierfahrer",
+      "lieferfahrer",
+      "auslieferungsfahrer",
+      "essenslieferung",
+      "food delivery",
+      "bike courier",
+      "rider",
+      "fahrrad",
+      "bike"
+    ]
+  }
+}

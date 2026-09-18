@@ -1,0 +1,30 @@
+{
+  "greenhouse": [
+    {
+      "name": "Atolls",
+      "token": "atolls",
+      "enabled": true
+    },
+    {
+      "name": "Celonis",
+      "token": "celonis",
+      "enabled": true
+    }
+  ],
+  "lever": [
+    {
+      "name": "PPRO",
+      "site": "ppro",
+      "enabled": true
+    },
+    {
+      "name": "Octopus Energy Group",
+      "site": "octoenergy",
+      "enabled": true
+    }
+  ],
+  "startupJobsRss": {
+    "enabled": true,
+    "url": "https://startup.jobs/feeds/jobs?role=engineering"
+  }
+}

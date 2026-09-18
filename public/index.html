@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Personal Job Agent</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Personal Job Agent</h1>
+      <p>بحث وظائف ألمانيا — أداة محلية شخصية</p>
+    </div>
+    <div class="header-actions">
+      <button id="discoverCompaniesBtn">اكتشاف شركات IT</button>
+      <button id="refreshBtn">بحث الآن</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="discoveryBox" class="discovery-box">
+      <strong>اكتشاف الشركات:</strong>
+      <span id="discoveryStatus">لم يتم تشغيل الاكتشاف بعد.</span>
+      <button id="showCompaniesBtn">عرض الشركات المكتشفة</button>
+      <button id="companyMonitorBtn">مراقبة الشركات</button>
+    </section>
+    <section id="companiesPanel" class="companies-panel hidden"></section>
+    <section id="companyMonitorPanel" class="companies-panel hidden"></section>
+    <section class="cv-box">
+      <strong>CV المستخدم في المطابقة:</strong>
+      <span id="cvName">جاري التحميل...</span>
+      <span id="cvSkills"></span>
+    </section>
+
+    <section class="toolbar">
+      <select id="availabilityFilter">
+        <option value="open_only">المتاح فقط</option>
+        <option value="">كل حالات التقديم</option>
+        <option value="open">التقديم مفتوح</option>
+        <option value="unknown">غير واضح</option>
+        <option value="closed">المغلق</option>
+      </select>
+      <select id="sourceFilter">
+        <option value="">كل المصادر</option>
+        <option value="Bundesagentur">Bundesagentur</option>
+        <option value="Career Page">مواقع الشركات مباشرة</option>
+        <option value="Startup Jobs">Startup Jobs</option>
+      </select>
+      <select id="categoryFilter">
+        <option value="">كل أنواع الوظائف</option>
+        <option value="tech">البرمجة والتقنية</option>
+        <option value="delivery">توصيل بالدراجة / كورير</option>
+      </select>
+      <input id="filter" placeholder="فلترة النتائج: React, München, شركة..." />
+      <select id="statusFilter">
+        <option value="">كل الحالات</option>
+        <option value="new">جديدة</option>
+        <option value="saved">محفوظة</option>
+        <option value="applied">تم التقديم</option>
+        <option value="ignore">تجاهل</option>
+      </select>
+      <select id="minScore">
+        <option value="0">كل نسب التطابق</option>
+        <option value="60">60%+</option>
+        <option value="70">70%+</option>
+        <option value="80">80%+</option>
+        <option value="90">90%+</option>
+      </select>
+      <select id="languageFilter">
+        <option value="">كل متطلبات اللغة</option>
+        <option value="avoid_b2">استبعد B2/C1/C2</option>
+        <option value="english_friendly">الأفضل للإنجليزية</option>
+        <option value="optional">الألمانية اختيارية/ميزة</option>
+      </select>
+    </section>
+
+    <section class="summary">
+      <span id="count">—</span>
+      <span id="updated">لم يتم البحث بعد</span>
+    </section>
+
+    <div id="errorBox" class="error hidden"></div>
+    <section id="jobs" class="jobs"></section>
+  </main>
+
+  <template id="jobTemplate">
+    <article class="job-card">
+      <div class="job-head">
+        <div>
+          <h2 class="title"></h2>
+          <div class="company"></div>
+        </div>
+        <div class="score"></div>
+      </div>
+      <div class="meta"></div>
+      <div class="reasons"></div>
+      <div class="actions">
+        <a class="open" target="_blank" rel="noopener">فتح الإعلان</a>
+        <button data-action="analyze">تحليل وتجهيز التقديم</button>
+        <button data-status="saved">حفظ</button>
+        <button data-status="applied">تم التقديم</button>
+        <button data-status="ignore">تجاهل</button>
+      </div>
+      <div class="state"></div>
+    </article>
+  </template>
+
+  <div id="applicationModal" class="modal hidden">
+    <div class="modal-card">
+      <button id="closeModal" class="close">×</button>
+      <h2>تحليل وتجهيز التقديم</h2>
+      <div id="analysisStatus"></div>
+
+      <div id="analysisContent" class="hidden">
+        <h3>طريقة التقديم</h3>
+        <div id="applyMethod"></div>
+        <div id="applyDestinations"></div>
+
+        <h3>المستندات المذكورة</h3>
+        <div id="requestedDocs"></div>
+
+        <h3>متطلب اللغة</h3>
+        <div id="analysisLanguage"></div>
+
+        <h3>تقييم الملاءمة</h3>
+        <div id="fitRecommendation"></div>
+        <div id="fitBreakdown" class="fit-grid"></div>
+        <div id="fitGaps"></div>
+
+        <h3>رسالة مقترحة</h3>
+        <label>الموضوع</label>
+        <input id="draftSubject" />
+        <label>نص الرسالة</label>
+        <textarea id="draftBody" rows="14"></textarea>
+
+        <div class="modal-actions">
+          <button id="copyDraft">نسخ الرسالة</button>
+          <a id="openEmail" class="open hidden">فتح البريد</a>
+          <a id="openApplySite" class="open hidden" target="_blank" rel="noopener">فتح صفحة التقديم</a>
+        </div>
+        <p class="warning">راجع الرسالة والإعلان قبل الإرسال. الأداة لا ترسل الطلب تلقائيًا.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js?v=1.8.0"></script>
+</body>
+</html>

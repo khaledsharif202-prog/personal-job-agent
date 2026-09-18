@@ -1,0 +1,65 @@
+{
+  "name": "Example Junior Developer",
+  "skills": [
+    "JavaScript",
+    "TypeScript",
+    "HTML",
+    "CSS",
+    "React Native",
+    "Node.js",
+    "Python",
+    "C++",
+    "Git",
+    "GitHub"
+  ],
+  "languages": [
+    "German",
+    "English"
+  ],
+  "targetKeywords": [
+    "frontend",
+    "front-end",
+    "web",
+    "react",
+    "react native",
+    "javascript",
+    "typescript",
+    "html",
+    "css",
+    "node.js",
+    "mobile"
+  ],
+  "targetSeniority": "junior",
+  "maxPreferredYears": 2,
+  "experienceEvidence": [
+    {
+      "type": "open-source",
+      "label": "Open-source contributions"
+    },
+    {
+      "type": "projects",
+      "label": "Personal/course projects"
+    }
+  ],
+  "preferredSignals": [
+    "junior",
+    "entry level",
+    "berufseinsteiger",
+    "quereinsteiger",
+    "trainee",
+    "erste praktische erfahrung",
+    "side projects",
+    "open source",
+    "lernbereitschaft"
+  ],
+  "negativeSignals": [
+    "senior",
+    "lead",
+    "3+ years",
+    "5+ years",
+    "advanced architecture",
+    "kubernetes"
+  ],
+  "sourceFile": "cv/example-cv.pdf",
+  "note": "Public portfolio sample profile. Replace locally with your own profile; do not commit private CV data."
+}
