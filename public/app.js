@@ -72,10 +72,9 @@ async function searchJobs() {
     document.querySelector("#refreshBtn").disabled = false;
   }
 }
-
-function currentStatus(id) {
-  return applications[id]?.status || "new";
-}
+function currentStatus(job) {
+   return applications[job.id]?.status || job.trackedStatus || "new";
+  }
 
 function render() {
   const q = filterEl.value.trim().toLowerCase();
@@ -100,7 +99,7 @@ function render() {
       (languageMode === "optional" && ["optional","no_german"].includes(job.language?.code));
 
     return (!q || blob.includes(q)) &&
-      (!wantedStatus || currentStatus(job.id) === wantedStatus) &&
+      (!wantedStatus || currentStatus(job) === wantedStatus) &&
       (!categoryMode || job.category === categoryMode) &&
       (!sourceMode || String(job.source || "").includes(sourceMode)) &&
       availabilityOk &&
@@ -157,7 +156,7 @@ function render() {
     link.href = job.url;
 
     const state = node.querySelector(".state");
-    state.textContent = `الحالة: ${labelStatus(currentStatus(job.id))}`;
+    state.textContent = `الحالة: ${labelStatus(currentStatus(job))}`;
 
     node.querySelectorAll("button[data-status]").forEach(btn => {
       btn.addEventListener("click", () => saveStatus(job, btn.dataset.status));

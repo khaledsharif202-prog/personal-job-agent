@@ -2,6 +2,11 @@ const http = require("http");
 const fs = require("fs");
 const path = require("path");
 const { URL } = require("url");
+const {
+  jobIdentityKey,
+  sameJob,
+  findMatchingApplication
+} = require("./lib/job-identity");
 
 const PORT = process.env.PORT || 3000;
 const ROOT = __dirname;
@@ -1726,7 +1731,7 @@ function updateCompanyMonitor(jobs) {
 function dedupe(jobs) {
   const map = new Map();
   for (const job of jobs) {
-    const key = job.id || `${job.title}|${job.company}|${job.location}`.toLowerCase();
+    const key = jobIdentityKey(job);
     if (!map.has(key) || (map.get(key).score || 0) < (job.score || 0)) {
       map.set(key, job);
     }
@@ -1786,6 +1791,17 @@ async function handleJobs(res) {
   unique = await enrichLanguage(unique, 60);
   unique = await enrichApplicationStatus(unique, 45);
   unique = await enrichStructuredFit(unique, 50);
+  const trackedApplications = readJSON(APPLICATIONS_PATH);
+
+  unique = unique.map(job => {
+    const match = findMatchingApplication(job, trackedApplications);
+
+    return {
+      ...job,
+      trackedStatus: match?.status || "new"
+     };
+  });
+
   unique.sort((a,b) => {
     if ((b.score || 0) !== (a.score || 0)) return (b.score || 0) - (a.score || 0);
     return String(b.published || "").localeCompare(String(a.published || ""));
@@ -1823,7 +1839,7 @@ function handleApplications(req, res) {
       try {
         const item = JSON.parse(body || "{}");
         const all = readJSON(APPLICATIONS_PATH);
-        const idx = all.findIndex(x => x.id === item.id);
+        const idx = all.findIndex(x => sameJob(x, item));
         const record = {
           ...item,
           updatedAt: new Date().toISOString()
